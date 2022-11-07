@@ -1,0 +1,85 @@
+.heading{
+    color: white;
+    font-family:'Century Gothic';
+    font-size:52px;
+    font-weight:lighter;
+    background: rgb(51,153,204);
+    height: 71px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    padding-left:33px;
+    text-size-adjust:auto;
+    margin:0;
+    margin-top:0;
+  }
+
+  .navigation{
+    margin-top: 0px;
+    background-color:black;
+    opacity: 0.8;
+    display:flex;
+    height: 37px;
+    align-items: center;
+    padding-left:24px;
+    
+    
+  }
+  .navigation > div{
+    color: white;
+    padding: 0px 15px;
+    align-items: center;
+    font-size: 16px;
+    padding-top:8px;
+    padding-bottom: 8px;
+    font-family: Arial;
+    font-weight:lighter;
+    font-weight: bold;
+  }
+
+  .navigationitem:hover{
+    background-color:orange;
+    color:black;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 3px solid white;
+  }
+  #navigationitem4{
+    color: white;
+    text-decoration: none;
+  }
+  #navigationitem4:hover{
+    background-color:orange;
+    color:black;
+    height:32px;
+    width:inherit;
+  }
+  .image{
+    position: relative;
+    right: -1025px;
+  }
+  .about{
+    margin-left:100px;
+    font-family:'Century Gothic' ;
+  }
+  .star{
+    color: red;
+  }
+  .about > h2{
+    font-size: 29px;
+    font-weight:lighter;
+  }
+  .details{
+    margin-left: 125px;
+    font-family:'Century Gothic' ;
+  }
+  .details > form > label{
+    margin-right:90px;
+    padding-top: 30px;
+  }
+  .information > div{
+    padding-bottom: 25px;
+  }
+  .information > div >label{
+    width:300px;
+    display: inline-block;
+  }

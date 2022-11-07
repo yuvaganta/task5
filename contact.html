@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>task4</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Amiko"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="contact.js"></script>
+  </head>
+
+  <body>
+    <h1 class="heading">TECHNOVERT</h1>
+
+    <nav>
+      <div class="navigation">
+        <div class="navigationitem">HOME</div>
+        <div class="navigationitem">SERVICES</div>
+        <div class="navigationitem">
+          <a href="careers.html" id="navigationitem3">CAREERS</a>
+        </div>
+        <div class="navigationitem" id="navigationitem4">CONTACT</div>
+
+        <div class="image"><img src="blog-icon.png" /></div>
+      </div>
+    </nav>
+    <h3>Contact</h3>
+    <form class="information" id="contactform">
+      <div id="feildWarning"></div>
+      <div>
+        <label for="name">My Name:</label>
+        <input type="text" id="name" name="name" /><span class="star">*</span
+        ><span id="nameWarning"></span>
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <input
+          type="radio"
+          id="male"
+          name="gender"
+          value="male"
+          onclick="maleButton()"
+        />
+        <span class="maleclass">Male</span>
+        <input
+          type="radio"
+          id="female"
+          name="gender"
+          value="female"
+          onclick="femaleButton()"
+        />
+        <label for="email">Female</label>
+      </div>
+      <div>
+        <label for="email">My Email Address:</label>
+        <input type="email" id="email" name="email" /><span class="star">*</span
+        ><span id="emailWarning"></span>
+      </div>
+      <div>
+        <label for="phoneNo">My Telephone Number:</label>
+        <input type="number" id="phoneNo" name="phoneNo" />
+      </div>
+      <div>
+        <label for="organizationName">My Organization Name: </label>
+        <input type="text" id="organizationName" name="organizationName" /><span
+          class="star"
+          >*</span
+        ><span id="organizationNameWarning"></span>
+      </div>
+      <div>
+        <label for="city">My City:</label>
+        <input type="text" id="city" name="city" />
+      </div>
+      <div>
+        <label for="state">My State or Province:</label>
+        <select id="state" name="state" onclick="statePromo()">
+          <option></option>
+          <option>Andhra Pradesh</option>
+          <option>Karnataka</option>
+          <option>Tamil Nadu</option>
+          <option>Telangana</option>
+        </select>
+      </div>
+      <div>
+        <label for="contactBy">Please Contact Me By:</label>
+        <span class="contact">
+          <input type="radio" id="email" name="contactBy" value="Email" />
+          <label for="email">Email</label>
+          <input type="radio" id="phoneNo" name="contactBy" value="Phone" />
+          <label for="phoneNo">Phone</label>
+          <input type="radio" id="both" name="contactBy" value="Both" />
+          <label for="both">Both</label>
+        </span>
+      </div>
+      <div>
+        <label for="promoCode">Promotion Code:</label>
+        <input type="text" id="promoCode" name="promoCode" />
+      </div>
+      <div>
+        <h5>Optional Information</h5>
+        <div>
+          This information is optional but it help us to serve you better.
+        </div>
+      </div>
+      <div>
+        <label for="websiteAdress">My Website Adress:</label>
+        <input type="text" id="websiteAdress" name="websiteAdress" />
+      </div>
+      <div>
+        <lable for="tellUsAboutOurOrganization"
+          >Tell Us About Our Organization:</lable
+        ><br />
+        <textarea
+          id="tellUsAboutOurOrganization"
+          name="tellUsAboutOurOrganization"
+          rows="5"
+          columns="70"
+        ></textarea>
+      </div>
+      <div>
+        <lable for="likeToKnow">What I'd really like to know is:</lable><br />
+        <textarea
+          id="likeToKnow"
+          name="likeToKnow"
+          rows="5"
+          columns="80"
+        ></textarea>
+      </div>
+      <input type="button" value="Send Message" onclick="validateForm()" />
+      <input type="button" value="Clear Form" onclick="clearForm()" />
+    </form>
+  </body>
+</html>
