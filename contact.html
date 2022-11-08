@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="contact.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="contact.js"></script>
   </head>
 
@@ -39,21 +40,9 @@
       </div>
       <div>
         <label for="gender">Gender:</label>
-        <input
-          type="radio"
-          id="male"
-          name="gender"
-          value="male"
-          onclick="maleButton()"
-        />
+        <input type="radio" id="male" name="gender" value="male" />
         <span class="maleclass">Male</span>
-        <input
-          type="radio"
-          id="female"
-          name="gender"
-          value="female"
-          onclick="femaleButton()"
-        />
+        <input type="radio" id="female" name="gender" value="female" />
         <label for="email">Female</label>
       </div>
       <div>
@@ -78,7 +67,7 @@
       </div>
       <div>
         <label for="state">My State or Province:</label>
-        <select id="state" name="state" onclick="statePromo()">
+        <select id="state" name="state">
           <option></option>
           <option>Andhra Pradesh</option>
           <option>Karnataka</option>
@@ -131,8 +120,8 @@
           columns="80"
         ></textarea>
       </div>
-      <input type="button" value="Send Message" onclick="validateForm()" />
-      <input type="button" value="Clear Form" onclick="clearForm()" />
+      <button id="submit">Send Message</button>
+      <button id="clear">Clear Form</button>
     </form>
   </body>
 </html>
