@@ -8,21 +8,16 @@ $(document).ready(function(){
         $('#nameWarning').text(""); 
         $('#organizationNameWarning').text(""); 
         $('#emailWarning').text("");
-    })
-})
-$(document).ready(function(){
+       
+    });
 
     $('#male').click(function(){
         alert("Hello Sir");
-    })
-})
-$(document).ready(function(){
+    });
 
     $('#female').click(function(){
         alert("Hello Lady");
-    })
-})
-$(document).ready(function(){
+    });
 
     $('#state').click(function(){
         var stateName=$('#state').val();
@@ -30,26 +25,25 @@ $(document).ready(function(){
         promoValue+="-PROMO";
         $('#promoCode').val(promoValue);
 
-    })
-})
-$(document).ready(function(){
+    });
+
     $('#name').change(function(e){
         e.preventDefault();
-        $.fn.validate();
+        validate();
     });
     $('#organizationName').change(function(e){
         e.preventDefault();
-        $.fn.validate();
+        validate();
     });
     $('#email').change(function(e){
         e.preventDefault();
-        $.fn.validate();
+        validate();
     });
-    $('button').click(function(e){
+    $('#submit').click(function(e){
         e.preventDefault();
-        $.fn.validate();
+        validate();
     });
-    $.fn.validate = function(){
+    function validate(){
         var organizationBox=$('#organizationName').val();
         var nameBox=$('#name').val();
         var emailBox=$('#email').val();
